@@ -51,6 +51,21 @@ namespace HMS
             LoadControl(new DashboardControl());
             lblPageTitle.Text = "Dashboard Overview";
         }
+        private void btnRoom_Click(object sender, EventArgs e)
+        {
+            LoadControl(new RoomControl());
+            lblPageTitle.Text = "Room Management";
+        }
+        private void btnCustomer_Click(object sender, EventArgs e)
+        {
+            LoadControl(new CustomerControl());
+            lblPageTitle.Text = "Customer Management";
+        }
+        private void btnBooking_Click(object sender, EventArgs e)
+        {
+            LoadControl(new BookingControl());
+            lblPageTitle.Text = "Booking Management";
+        }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
