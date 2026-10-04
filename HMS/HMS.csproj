@@ -121,6 +121,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="images\hotel_logo.jpg" />
+    <None Include="Resources\coin.png" />
+    <None Include="Resources\clock.png" />
+    <None Include="Resources\currency.png" />
+    <None Include="Resources\ticket-box.png" />
+    <None Include="Resources\group.png" />
     <None Include="Resources\add.png" />
     <None Include="Resources\search.png" />
     <None Include="Resources\notification.png" />
