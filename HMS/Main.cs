@@ -17,6 +17,15 @@ namespace HMS
             InitializeComponent();
         }
 
+        private void LoadControl(UserControl control)
+        {
+            pnlContent.Controls.Clear();
+
+            control.Dock = DockStyle.Fill;
+
+            pnlContent.Controls.Add(control);
+        }
+
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
@@ -39,7 +48,8 @@ namespace HMS
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-
+            LoadControl(new DashboardControl());
+            lblPageTitle.Text = "Dashboard Overview";
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
