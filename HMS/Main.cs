@@ -15,6 +15,8 @@ namespace HMS
         public Main()
         {
             InitializeComponent();
+            LoadControl(new DashboardControl());
+            lblPageTitle.Text = "Dashboard Overview";
         }
 
         private void LoadControl(UserControl control)
@@ -26,26 +28,12 @@ namespace HMS
             pnlContent.Controls.Add(control);
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void Main_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             LoadControl(new DashboardControl());
@@ -65,21 +53,6 @@ namespace HMS
         {
             LoadControl(new BookingControl());
             lblPageTitle.Text = "Booking Management";
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
